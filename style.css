@@ -304,11 +304,13 @@ height: 140px;
 
 .items-collection{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
 .item{
     margin: 3vw;
-    height: 290px;
+    height: 220px;
+    width: 160px;
+
 
 }
 
@@ -317,8 +319,9 @@ height: 140px;
 
 }
 .page2{
-    min-height: 140vh;
+    height: 100%;
     width: 100%;
+
 }
 .over h1{
     font-size: 2.5rem;
@@ -332,15 +335,18 @@ height: 140px;
 
 .page3{
     margin-top: 20vw;
-   min-height:100vh;
+   height:100%;
     width: 100%;
     z-index: 999;
+    background-color: orange;
    
 }
 .footer-content{
-    height: 60vh;
+    height: 60%;
     padding: 3vw;
     margin-top:4vw ;
+    background-color: rgb(187, 186, 184);
+
 }
 .footer-top{
     display: flex;
