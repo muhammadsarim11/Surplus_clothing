@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: #F7F7F7;
+}
+
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F7F7F7;
+
+
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #F7F7F7;
+    border-bottom: .1px solid rgb(214, 212, 212);
+
+}
+.menu i{
+    display: none;
+}
+
+.logo{
+
+}
+.logo img{
+ height: 80px;
+ width:150px;
+ object-position: center;
+ object-fit: contain;
+ margin-left: 3vw;
+}
+
+.icons{
+    display: flex;
+    list-style: none;
+    column-gap: 15px;
+
+}
+
+.icons i {
+    font-size: 25px;
+  
+}
+
+.collections{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 20px;
+    padding: 2vw 2vw;
+  
+
+    background-color: #F7F7F7;
+}
+
+
+.collections a:hover{
+    background-color: black;
+    transition: all ease .2s;
+}
+.collections a {
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    text-transform: capitalize;
+   padding: 10px 22px;
+   background-color: rgb(59, 57, 57);
+   border-radius: 10px;
+   box-shadow: 2px 2px 2px 1px gainsboro;
+   transition: all ease .2s;
+   color: white;
+}
+
+.main-content{
+    width: 100%;
+    height: 100vh;
+    background-color:gray;
+   
+}
+
+.main-content img {
+    height: 100%;
+width: 100%;
+object-fit:cover;
+object-position:center;
+
+
+}
+
+
+.page2{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.items-collection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 2vw;
+
+}
+.item{
+    
+    position: relative;
+    transition: .3s;
+    overflow: hidden;
+    z-index: 999;
+
+}
+.item img{
+    height: 500px;
+    width: 300px;
+    object-position: center;
+    object-fit: cover;
+    z-index: 999;
+}
+
+.item:hover{
+    opacity: 10;
+    transition: .3s;
+    scale: 1.05;
+    
+}
+
+.over{height: 500px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+    font-size: 40px;
+    color: rgb(37, 35, 35);
+    font-weight: bolder;
+    cursor: pointer;
+   /* display: none; */
+   background-color: #eeecec;
+  
+  opacity: .4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.over:hover{
+   opacity: 0;
+   transition: .5s;
+}
+
+
+.page3 {
+   height: 100vh;
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.footer-content{
+  height:90vh;
+background-color: #F7F7F7;
+padding: 3vw ;
+
+   
+
+}
+
+.footer-top{
+    
+    padding-top: 5vw ;
+}
+
+.footer-top input{
+    margin-top: 2vw;
+    width: 92%;
+    padding: 10px 10px;
+    background-color: #F2F2F2;
+    border: 1px solid #898787;
+
+
+}
+.footer-top p{
+    font-weight: 500;
+}
+.footer-top button{
+    padding: 12px 20px;
+    font-size: 13px;
+    border: none;
+    color: white;
+    background-color: black;
+    text-transform: capitalize;
+    font-family: monospace;
+}
+
+
+
+.footer-bottom{
+    padding: 2vw 0 2vw 2vw;
+}
+.first img{
+height: 140px;
+}
+.first{
+    text-align: center;
+}
+
+.icon-links{
+    padding: 30px;
+
+}
+.icon-links i{
+    padding: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.second{
+    text-align: center;
+    padding: 2vw;
+}
+
+.second h3{
+    font-weight: 500;
+    padding: 10px;
+    font-size: 26px;
+}
+.second p{
+    padding: 8px;
+    font-weight: 300;
+    font-size: 15px;
+
+}
+
+@media screen and (max-width:450px) {
+.icons{
+    display: none;
+}
+    .logo img{
+        height: 80px;
+        width: 100px;
+    }
+     .nav{
+        display: flex;
+        justify-content: space-between;
+    } 
+
+ 
+   .menu i{
+    display: block;
+    
+    font-size: 35px;
+    
+  } 
+  .collections a{
+    font-size: 20px;
+    text-align:center;
+   padding: 7px 18px;
+   margin: 2vw;
+
+  }
+  
+  .collections{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    padding: 20px;
+  }
+
+  .page1{
+    min-height: 60vh;
+    width: 100%;
+    
+   
+  }
+
+  .main-content{
+    height: 25vh;
+    padding-top: 4vh;
+    background-color: transparent;
+    
+  }
+
+
+  .main-content{
+    height: 100%;
+  }
+
+.items-collection{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    margin: 3vw;
+    height: 290px;
+
+}
+
+.item img{
+    object-fit: cover;
+
+}
+.page2{
+    min-height: 115vh;
+    width: 100%;
+}
+.over h1{
+    font-size: 2.5rem;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.page3{
+    height:80vh;
+    width: 100%;
+   
+}
+.footer-content{
+    height: 65vh;
+    padding: 3vw;
+    margin-top:4vw ;
+}
+.footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-bottom{
+    margin-top: 20vw;
+}
+.second h3{
+    font-size:2rem;
+
+}
+
+.second p{
+    font-size: 1.2rem;
+    padding-block: 10px;
+    text-align: center;
+}
+
+.third p{
+    font-size: 1rem;
+    margin-top: 3vw;
+}
+
+.first{
+    margin-top: 3vw;
+}
+
+.third{
+    text-align: center;
+}
+
+.footer-top p{
+    font-size: 1.4rem;
+}
+.footer-top button{
+width: 92.5%;
+font-size: 1rem;
+}
+
+
+
+}
